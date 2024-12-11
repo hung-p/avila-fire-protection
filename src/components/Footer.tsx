@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="bg-gray-900 text-white py-2">
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col sm:flex-row sm:space-x-12 space-y-12 sm:space-y-0">
-          <div className="w-full sm:w-2/4">
+          <div className="w-full sm:w-2/5">
             <div className="flex items-center">
               <a href="/">
                 <img
@@ -19,8 +19,7 @@ export function Footer() {
               </a>
             </div>
             <p>
-              Professional fire protection and plumbing services you can trust. Serving Santa Clara County & San Mateo County Area since 2002.
-            </p>
+            Trusted for over two decades, Gilbert Avila has been your trusted expert in fire protection and plumbing services, proudly serving the entire Bay Area, including Santa Clara, San Mateo, and other surrounding counties. Committed to quality service and customer satisfaction with dedication since 2002.</p>
           </div>
 
           <div className="w-full sm:w-1/4">
