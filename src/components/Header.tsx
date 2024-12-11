@@ -1,7 +1,6 @@
-import React from 'react';
 import { Phone, Clock } from 'lucide-react';
 import NavLink from './NavLink';
-
+import logo from '../assets/images/avila-logo.png'; 
 export function Header() {
   return (
     <header className="bg-blue-600 text-white">
@@ -24,7 +23,7 @@ export function Header() {
             <span className="text-2xl font-bold">Avila - Fire protection and Plumbing</span>
           </div> */}
           <img
-            src="/src/images/avila-logo.png"
+            src={logo}
             alt="Gilberto Avila - Fire Protection and Plumbing Services"
             className="rounded-lg  object-cover h-20"
           />

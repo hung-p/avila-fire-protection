@@ -1,5 +1,9 @@
 import React from 'react';
 import { Award, Users, History, Shield } from 'lucide-react';
+import about_img_1 from '../assets/images/gilberto-avila.jpg';
+import about_img_2 from '../assets/images/about-2.jpeg';
+import about_img_3 from '../assets/images/about-3.jpeg';
+import about_img_4 from '../assets/images/about-4.jpeg';
 
 export function About() {
     return (
@@ -28,22 +32,22 @@ export function About() {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                         <img
-                            src="/src/images/gilberto-avila.jpg"
+                            src={about_img_1}
                             alt="Professional plumber"
                             className="rounded-lg  w-96 h-64  object-cover"
                         />
                         <img
-                            src="https://images.unsplash.com/photo-1542013936693-884638332954"
+                            src={about_img_2}
                             alt="Plumbing work"
                             className="rounded-lg w-96 h-64 object-cover mt-8"
                         />
                         <img
-                            src="https://images.unsplash.com/photo-1564540579594-0930edb6de43"
+                            src={about_img_3}
                             alt="Plumbing tools"
                             className="rounded-lg w-96 h-64 object-cover"
                         />
                         <img
-                            src="https://plus.unsplash.com/premium_photo-1664299069577-11579b487e6c"
+                            src={about_img_4}
                             alt="Modern bathroom installation"
                             className="rounded-lg w-96 h-64 object-cover mt-8"
                         />

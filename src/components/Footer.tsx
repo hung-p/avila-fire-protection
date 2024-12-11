@@ -1,5 +1,5 @@
-import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import logo_transparent from '../assets/images/avila-logo-transparent.png';
 
 export function Footer() {
   const iconClasses = "text-2xl mr-4 text-gray-400 hover:text-white transition-colors duration-300";
@@ -10,7 +10,7 @@ export function Footer() {
           <div className="w-2/4">
             <div className="flex items-center">
               <img
-                src="/src/images/avila-logo-transparent.png"
+                src={logo_transparent}
                 alt="Gilberto Avila - Fire Protection and Plumbing Services"
                 className="rounded-lg  object-cover h-20 mb-4"
               />
