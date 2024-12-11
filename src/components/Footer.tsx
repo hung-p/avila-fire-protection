@@ -67,24 +67,30 @@ export function Footer() {
       </div>
       <div className="border-t border-gray-800 text-center text-gray-400 pt-4 pb-2">
         <div className="flex justify-center items-center mb-4 space-x-4">
-          <a href="https://www.youtube.com/@avilaplumbing9307" target="_blank">
+          <a href="https://www.youtube.com/@avilaplumbing9307" target="_blank" rel="noopener noreferrer">
             <FaYoutube className={iconClasses} />
           </a>
-          <a href="https://www.instagram.com/avilafireprotection/" target="_blank">
+          <a href="https://www.instagram.com/avilafireprotection/" target="_blank" rel="noopener noreferrer">
             <FaInstagram className={iconClasses} />
           </a>
-          <a href="http://tiktok.com/@avilaplumbing" target="_blank">
+          <a href="http://tiktok.com/@avilaplumbing" target="_blank" rel="noopener noreferrer">
             <FaTiktok className={iconClasses} />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100077696689752" target="_blank" >
+          <a href="https://www.facebook.com/profile.php?id=100077696689752" target="_blank" rel="noopener noreferrer">
             <FaFacebook className={iconClasses} />
           </a>
-          <a href="https://twitter.com" target="_blank">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <FaTwitter className={iconClasses} />
           </a>
         </div>
+        <p>
+          Designed by{' '}
+          <a href="https://ratexa.com" target="_blank" className="text-blue-500 hover:underline">Ratexa — Discover Top-Rated Businesses</a>
+        </p>
         <p>&copy; 2002 - {new Date().getFullYear()} Avila Fire Protection and Plumbing. All rights reserved.</p>
+
       </div>
+
     </footer>
   );
 }
