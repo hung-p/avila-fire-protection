@@ -14,13 +14,13 @@ export function Hero() {
       <div className="relative container mx-auto px-4 py-24">
         <div className="max-w-2xl">
           <h1 className="text-5xl font-bold mb-6">
-            Professional Fire Protection & Plumbing Services
+            Fire Protection and Plumbing Services
           </h1>
           <p className="text-xl mb-8">
             Expert fire protection and plumbing solutions for your home or business. Available for
             emergencies with guaranteed satisfaction.
           </p>
-          <div className="flex space-x-4">
+          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
             <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
               <div className="flex items-center">
                 <Phone size={22} className="mr-2" />
@@ -34,7 +34,9 @@ export function Hero() {
               </div>
             </button>
           </div>
-          <div className="flex items-center mt-8 space-x-8">
+
+          {/* Responsive Features Section */}
+          <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 mt-8">
             <Feature icon={<ShieldCheck />} text="Licensed & Insured" />
             <Feature icon={<Clock />} text="Mon-Sat: 8AM-6PM" />
             <Feature icon={<Wrench />} text="100% Satisfaction" />
@@ -47,7 +49,7 @@ export function Hero() {
 
 function Feature({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center space-x-2">
       <div className="mr-2">{icon}</div>
       <span>{text}</span>
     </div>

@@ -1,11 +1,13 @@
 import { Phone, Clock } from 'lucide-react';
 import NavLink from './NavLink';
-import logo from '../assets/images/avila-logo.png'; 
+import logo from '../assets/images/avila-logo.png';
+
 export function Header() {
   return (
     <header className="bg-blue-600 text-white">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-2 text-sm">
+        {/* Contact info section */}
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-2 text-sm space-y-2 sm:space-y-0">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <Phone size={16} className="mr-2" />
@@ -17,29 +19,22 @@ export function Header() {
             </div>
           </div>
         </div>
-        <nav className="flex justify-between items-center py-4">
-          {/* <div className="flex items-center">
-            <Wrench size={32} className="mr-2" />
-            <span className="text-2xl font-bold">Avila - Fire protection and Plumbing</span>
-          </div> */}
+
+        {/* Main navigation section */}
+        <nav className="flex flex-col sm:flex-row justify-between items-center py-4">
           <img
             src={logo}
             alt="Gilberto Avila - Fire Protection and Plumbing Services"
-            className="rounded-lg  object-cover h-20"
+            className="rounded-lg object-cover h-20 mb-4 sm:mb-0"
           />
-
-          <div className="space-x-6">
+          <div className="flex space-x-6 sm:space-x-10">
             <NavLink href="#about">About</NavLink>
             <NavLink href="#services">Services</NavLink>
             <NavLink href="#testimonials">Testimonials</NavLink>
             <NavLink href="#contact">Contact</NavLink>
-            {/* <button className="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-50 transition-colors">
-              Get Estimate
-            </button> */}
           </div>
         </nav>
       </div>
     </header>
   );
 }
-
