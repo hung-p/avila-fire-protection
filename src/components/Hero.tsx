@@ -21,18 +21,21 @@ export function Hero() {
             emergencies with guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+            <a href="tel:4087711208"> <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
               <div className="flex items-center">
                 <Phone size={22} className="mr-2" />
-                <span><a href="tel:4087711208">Call Us Now</a></span>
+                <span>Call Us Now</span>
               </div>
             </button>
-            <button className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              <div className="flex items-center">
-                <CalendarCheck size={22} className="mr-2" />
-                <span><a href="https://calendar.app.google/4Tcx7b8zQVPV6ija7" target='_blank'>Schedule Service</a></span>
-              </div>
-            </button>
+            </a>
+            <a href="https://calendar.app.google/4Tcx7b8zQVPV6ija7" target='_blank'>
+              <button className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                <div className="flex items-center">
+                  <CalendarCheck size={22} className="mr-2" />
+                  <span>Schedule Service</span>
+                </div>
+              </button>
+            </a>
           </div>
 
           {/* Responsive Features Section */}
@@ -43,7 +46,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

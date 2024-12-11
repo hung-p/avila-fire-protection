@@ -16,28 +16,34 @@ export function Contact() {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
               <div className="space-y-4">
-                <a href="tel:4087711208">
+                <div className="flex items-start">
+                  <a href="tel:4087711208">
+                    <ContactInfo
+                      icon={<Phone />}
+                      title="Phone"
+                      content="(408) 771-1208"
+                    />
+                  </a>
+                </div>
+                <div className="flex items-start">
+                  <a href="mailto:info@avilafireprotection.com">
+                    <ContactInfo
+                      icon={<Mail />}
+                      title="Email"
+                      content="info@avilafireprotection.com"
+                    />
+                  </a>
+                </div>
+                <div className="flex items-start">
                   <ContactInfo
-                    icon={<Phone />}
-                    title="Phone"
-                    content="(408) 771-1208"
+                    icon={<MapPin />}
+                    title="Address"
+                    content="P.O BOX 1862 San Jose CA 95109"
                   />
-                </a>
-                <a href="mailto:info@avilafireprotection.com">
-                  <ContactInfo
-                    icon={<Mail />}
-                    title="Email"
-                    content="info@avilafireprotection.com"
-                  />
-                </a>
-                <ContactInfo
-                  icon={<MapPin />}
-                  title="Address"
-                  content="P.O BOX 1862 San Jose CA 95109"
-                />
+                </div>
               </div>
             </div>
-            <form className="space-y-4">
+            <form className="space-y-4" action='tel:4087711208'>
               <input
                 type="text"
                 placeholder="Your Name"

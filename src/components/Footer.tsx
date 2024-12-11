@@ -10,11 +10,13 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row sm:space-x-12 space-y-12 sm:space-y-0">
           <div className="w-full sm:w-2/4">
             <div className="flex items-center">
-              <img
-                src={logo_transparent}
-                alt="Gilberto Avila - Fire Protection and Plumbing Services"
-                className="rounded-lg object-cover h-20 mb-4"
-              />
+              <a href="/">
+                <img
+                  src={logo_transparent}
+                  alt="Gilberto Avila - Fire Protection and Plumbing Services"
+                  className="rounded-lg object-cover h-20 mb-4"
+                />
+              </a>
             </div>
             <p>
               Professional fire protection and plumbing services you can trust. Serving Santa Clara County & San Mateo County Area since 2002.
